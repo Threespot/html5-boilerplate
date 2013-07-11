@@ -86,9 +86,77 @@
     </head>
     <body>
 
+        <!-- Skip Links (only visible to screen readers) -->
+        <div id="skip" class="visuallyhidden">
+            <ul>
+                <li><a href="#nav">Skip to navigation</a></li>
+                <li><a href="#main">Skip to main content</a></li>
+                <li><a href="#footer">Skip to footer</a></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <div class="header" role="banner">
+            <!-- Logo using Picturefill -->
+            <a href="/" class="logo">
+                <div data-picture data-alt="Organization Name">
+                    <div data-src="/assets/img/logo.png"></div>
+                    <div data-src="/assets/img/logo@2x.png" data-media="(min-device-pixel-ratio: 1.5)"></div>
+                    <div data-src="/assets/img/logo@2x.png" data-media="(-webkit-min-device-pixel-ratio: 1.5)"></div>
+                    <noscript><img src="/assets/img/logo.png" alt="Organization Name" /></noscript>
+                </div>
+            </a>
+        </div><!-- /header -->
+
+        <!-- Navigation -->
+        <div id="nav" class="nav clearfix" role="navigation" aria-label="Primary Navigation">
+            <div class="wrap">
+                <ul class="primary">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Topics</a>
+                        <div class="subnav">
+                            <div class="wrap">
+                                <ul>
+                                    <li><a href="#">Topic 1</a></li>
+                                    <li><a href="#">Topic 2</a></li>
+                                    <li><a href="#">Topic 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Social links using font icons -->
+                <ul class="secondary">
+                    <li><a href="http://twitter.com/NAME"><span class="icon-twitter"></span><span class="visuallyhidden">Twitter</span></a></li>
+                    <li><a href="http://www.facebook.com/NAME"><span class="icon-facebook"></span><span class="visuallyhidden">Facebook</span></a></li>
+                    <li><a href="http://pinterest.com/NAME"><span class="icon-pinterest"></span><span class="visuallyhidden">Pinterest</span></a></li>
+                </ul>
+            </div>
+        </div><!-- /nav -->
+
+        <!-- Main Content -->
+        <div id="main" class="main" role="main">
+            <div class="main-wrap">
+                <h1>Page Title</h1>
+            </div>
+        </div><!-- /main -->
+
+        <!-- Footer -->
+        <div id="footer" class="footer" role="contentinfo">
+            <div class="wrap">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li>&copy; 2013 ABC Corp.</li>
+                </ul>
+            </div>
+        </div><!-- /footer -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
