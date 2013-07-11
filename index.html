@@ -5,15 +5,83 @@
 <!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+
+        <!-- Suppress IE6's pop-up-on-mouseover toolbar for images, that can
+             interfere with certain designs. -->
+        <!--[if lt IE 7 ]><meta http-equiv="imagetoolbar" content="false" /><![endif]-->
+
+        <!-- Force IE8 mode, not compatibility mode -->
+        <!--[if lte IE 8 ]><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><![endif]-->
+
+        <title>Primary Keyword - Secondary Keyword | Brand Name (max 70 chars)</title>
+        <meta name="description" content="Shoot for 150-160 chars">
+
+        <!-- Add author or publisher's Google+ profile link -->
+        <link rel="author" href="[Google+ Profile URL]" />
+        <link rel="publisher" href="Google+ Profile URL]" />
+
+        <!-- Set a canonical URL on pages with duplicate content -->
+        <link rel="canonical" href="http://www.example.com/">
+
+        <!-- OPTIONAL - See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
+        <meta name="robots" value="none">
+
+        <!-- iOS 6 fixes the infamous orientation change bug, so a better experience is provided by reintroducing `initial-scale=1`. -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- Multi-size ICO containing 16x16 and 32x32 icons -->
+        <link rel="shortcut icon" href="path/to/favicon.ico">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!-- iOS tags -->
+        <meta name="apple-mobile-web-app-title" content="Website Name">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="path/to/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="path/to/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="path/to/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="path/to/apple-touch-icon-precomposed.png">
+
+        <!-- Facebook OG Tags -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Title of page">
+        <meta property="og:description" content="A short description of the page being shared, max 200 chars">
+        <meta property="og:url" content="URL to link to">
+        <meta property="og:image" content="path to image, min size of 200px square, max size of 1500px">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@nytimes">
+        <meta name="twitter:creator" content="@SarahMaslinNir">
+        <meta name="twitter:title" content="Parade of Fans for Houston’s Funeral">
+        <meta name="twitter:description" content="NEWARK - The guest list and parade of limousines with celebrities emerging from them seemed more suited to a red carpet event in Hollywood or New York than than a gritty stretch of Sussex Avenue near the former site of the James M. Baxter Terrace public housing project here.">
+        <meta name="twitter:image" content="http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-article.jpg">
+
+        <!-- Windows 8 pinned site tags -->
+        <meta name="application-name" content="Website Name"/>
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        
+        <!-- Windows 8.0 tile image, should be 144x144 -->
+        <meta name="msapplication-TileImage" content="path/to/tileicon.png">
+        
+        <!-- Windows 8.1 tile images, use exact filenames below -->
+        <!-- Despite the name values, images should be 128x128, 270x270, 270x558, and 558x558 -->
+        <meta name="msapplication-square70x70logo" content="tiny.png"/>
+        <meta name="msapplication-square150x150logo" content="square.png"/>
+        <meta name="msapplication-wide310x150logo" content="wide.png"/>
+        <meta name="msapplication-square310x310logo" content="large.png"/>
+        
+        <!-- Optional tile tag to add notifications based on up to 5 feeds, polled periodically -->
+        <!-- Docs: http://msdn.microsoft.com/en-us/library/ie/dn255024(v=vs.85).aspx#msapplication-notification -->
+        <meta name="msapplication-notification" content="frequency=30;polling-uri=http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml&id=1"/>
+
+        <!-- Modern Browser Styles -->
+        <!--[if gte IE 9]><!-->
+            <link rel="stylesheet" href="css/main.css">
+        <!--<![endif]-->
+
+        <!-- Old IE Styles for IE 8 and below (auto-generated using Sass) -->
+        <!--[if (lt IE 9) & (!IEMobile) ]>
+            <link rel="stylesheet" href="css/main-old-ie.css">
+        <![endif]-->
+        
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
