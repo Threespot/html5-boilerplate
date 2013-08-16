@@ -2,10 +2,12 @@
 	
 	var config = {
 		paths: {
-			"jquery": "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min",
-			"jquery.colorbox": "lib/jquery.colorbox",
-			"jquery.scrollto": "lib/jquery.scrollto",
-			"underscore": "lib/underscore"
+			"jquery": "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min"
+		},
+		shim: {
+			'jquery': {
+				exports: '$'
+			}
 		}
 	};
 
